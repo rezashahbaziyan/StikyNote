@@ -1,3 +1,12 @@
+/*
+auther = RezaShahbaziyan => ujin
+github = https://github.com/rezashahbaziyan
+Instagram = ujin.js
+about me : front-end developer with React 
+and blockchain smart contract developer 
+
+*/
+
 import React , { useState } from "react";
 //import css File
 import "./AddNote.css"
@@ -16,6 +25,9 @@ export default function AddNote(){
     const handelNoteText = (e) =>{
         setNoteText(e.target.value);
     }
+    /* button Click function Create new Stiky
+    
+    */
     const ButtonClik = () => {
         setNoteList([...noteList,{title: noteTitle , text: noteText}])
         setNoteTitle('');
