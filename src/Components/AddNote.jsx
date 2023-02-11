@@ -21,7 +21,7 @@ export default function AddNote(){
     };
 
     return <div className="mother-div">
-        <div className="input-div">
+        <div className="input-div"> 
         <input type="text" placeholder="Title..." className= "inputs" value={noteTitle} onChange={handelNoteTitle}/>
         <input type="text" placeholder="Text..." className= "inputs" value={noteText} onChange={handelNoteText}/>
         <button onClick={ButtonClik}>Add Note</button>
@@ -32,7 +32,7 @@ export default function AddNote(){
             <div className={`Stiky-Div color-${index % 6}`} key={index}>
                 <h2>{note.title}</h2>
                 <span>{note.text}</span>
-                <FontAwesomeIcon icon={faTimes} onClick={() => setNoteList(noteList.filter((_, i) => i !== index))} />
+                <FontAwesomeIcon className={"removeIcon"} icon={faTimes} onClick={() => setNoteList(noteList.filter((_, i) => i !== index))} />
             </div>
         ))}
         </div>

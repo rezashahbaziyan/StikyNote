@@ -44,12 +44,41 @@
     justify-content: space-around;
     align-items: center;
     cursor: pointer;
-
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-height: 500px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
 }
 
 
 .Stiky-Div:hover {
     transform: rotate(20deg);
+}
+
+.Stiky-Div:hover :nth-child(3) {
+    transform: translateX(60px);
+    transition: all 0.5s;
+}
+
+.Stiky-Div :nth-child(3) {
+    border: 2px solid #000;
+    border-radius: 1rem;
+    height: 1rem;
+    width: 1rem;
+}
+
+.Stiky-Div span {
+    white-space: normal;
+    word-wrap: break-word;
+    padding: 1rem;
+}
+
+.removeIcon:hover {
+    height: 1.5rem;
+    width: 1.5rem;
 }
 
 ::-webkit-scrollbar {
