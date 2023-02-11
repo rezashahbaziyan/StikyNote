@@ -1,8 +1,10 @@
 import React , { useState } from "react";
+//import css File
 import "./AddNote.css"
+//import fontAwesome Icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimes } from "@fortawesome/free-solid-svg-icons";
-
+// AddNote function 
 export default function AddNote(){
     const [noteTitle , setNoteTitle] = useState('');
     const [noteText , setNoteText] = useState('');
