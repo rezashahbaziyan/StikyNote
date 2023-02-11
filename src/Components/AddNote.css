@@ -1,0 +1,87 @@
+.input-div {
+    background-color: rgb(133, 133, 133);
+    position: fixed;
+    height: 90vh;
+    width: 40vh;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputs {
+    height: 50px;
+}
+
+.notes-div {
+    height: 90vh;
+    position: fixed;
+    width: 152vh;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    padding: 20px 10px;
+    border: 2px solid rgb(133, 133, 133);
+
+}
+
+.Stiky-Div {
+    height: 200px;
+    width: 200px;
+    background-color: rgb(133, 133, 133);
+    margin: 20px 20px;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+
+.Stiky-Div:hover {
+    transform: rotate(20deg);
+}
+
+::-webkit-scrollbar {
+    width: 2px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: none;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: none;
+}
+
+.color-0 {
+    background-color: #f04d07;
+}
+
+.color-1 {
+    background-color: #0cf52e;
+}
+
+.color-2 {
+    background-color: #042dff;
+}
+
+.color-3 {
+    background-color: #ed0027;
+}
+
+.color-4 {
+    background-color: rgb(210, 21, 166);
+}
