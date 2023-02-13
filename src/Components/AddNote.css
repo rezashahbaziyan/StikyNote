@@ -53,6 +53,20 @@
     flex-direction: column;
 }
 
+.input-div input {
+    height: 40px;
+    width: 90%;
+    margin: 10px;
+    outline: none;
+    border: none;
+    padding-left: 0.5rem;
+}
+
+.input-div button {
+    height: 30px;
+    width: 40%;
+}
+
 .Stiky-Div:hover {
     transform: rotate(20deg);
 }
