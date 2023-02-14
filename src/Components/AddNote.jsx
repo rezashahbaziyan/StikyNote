@@ -34,6 +34,11 @@ export default function AddNote() {
     const handleSearchText = (e) => {
         setSearchText(e.target.value);
     };
+    const filteredNotes = noteList.filter(
+        (note) =>
+            note.title.toLowerCase().includes(searchText.toLowerCase()) ||
+            note.text.toLowerCase().includes(searchText.toLowerCase())
+    );
     
     return (
     <div className="mother-div">
