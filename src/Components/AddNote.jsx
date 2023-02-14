@@ -59,7 +59,9 @@ export default function AddNote() {
                     }/>
             </div>
             ))}
+            
         </div>
     </div>
+
     );
 }      
