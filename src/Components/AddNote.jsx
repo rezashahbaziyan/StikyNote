@@ -40,6 +40,7 @@ export default function AddNote() {
             note.text.toLowerCase().includes(searchText.toLowerCase())
     );
     
+    
     return (
     <div className="mother-div">
         <div className="input-div">
